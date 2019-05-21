@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
+		<script type="text/javascript" src="layui/layui.js"></script>
+		<script type="text/javascript">
+			layui.use(['carousel', 'form'], function(){
+			  var carousel = layui.carousel
+			  ,form = layui.form;
+			  
+			  //图片轮播
+			  carousel.render({
+				elem: '#test10'
+				,width: '100%'
+				,interval: 5000
+			  });
+			});
+		</script>
+		
+		
+		
+		<style type="text/css">
+			a{
+				color: #fff;
+			}
+			li{
+				line-height: 50px;
+				font-size: 12px;
+			}
+			.on{
+				text-align: center;
+				
+			}
+			li a:hover{
+				color: #01AAED;
+			}
+			.font{
+				font-size: 10px;
+			}
+			.top{
+				line-height: 50px;
+			}
+			.ran{
+				text-align: center;
+				line-height: 30px;
+				border-radius: 50%;
+				background: #01AAED;
+				cursor: pointer;
+				float: right;
+				width: 30px;
+				height: 30px;
+			}
+			.ran:hover{
+				color: #fff;
+			.big{
+				width: 100%;
+			}
+			.nav{
+				width: 100%;
+			}
+			#tp:hover{
+				background: red;
+			}
+			#anli{	
+				background-color: #fff;
+			}
+			#anli img{
+				height: 80%;
+				width: 100%;
+				border-radius: 5px;
+			}
+			.cont h3{
+				width: 90%;
+				margin: 0 auto;
+				padding-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="layui-fluid" style="background: #000; height: 50px;">
+			<a class="layui-hide-md layui-col-xs11 font top" href="javascript:;">
+				白鹭科技
+			</a>
+			<div class="layui-row layui-col-md8 layui-hide-xs" style="width: 90%; margin: 0 auto;">
+				<a class="layui-hide-xs layui-col-md3 font top" style="margin-left: 50px;" href="javascript:;">
+					<img class="layui-nav-img" style="border-radius: 0;" src="images/product-icon-engine.jpg">Egret Technology
+				</a>
+				<ul class="layui-hide-xs layui-col-md7 on" style="background: rgba(0,0,0,0);">
+						<li class="layui-col-md1">
+							<a href="">首页</a>
+						</li>
+						<li class="layui-col-md1">
+							<a href="">产品</a>
+						</li>
+						<li class="layui-col-md1">
+							<a href="">解决方案</a>
+						</li>
+						<li class="layui-col-md1">
+							<a href="">开发者中心</a>
+						</li>
+						<li class="layui-col-md1">
+							<a href="">案例</a>
+						</li>
+						<li class="layui-col-md1">
+							<a href="">众包平台</a>
+						</li>
+						<li class="layui-col-md1">
+							<a href="">教育</a>
+						</li>
+						<li class="layui-col-md1">
+							<a href="">众包平台</a>
+						</li>
+						<li class="layui-col-md1">
+							<a href="">社区</a>
+						</li>
+						<li class="layui-col-md1">
+							<a href="">关于我们</a>
+						</li>
+				</ul>
+			</div>
+			<div class="layui-col-md1 layui-col-xs1 layui-hide-xs"><a href=""><p class="ran" style="margin-top: 10px;margin-right: 50px;">EN</p></a></div>
+			<div class="layui-col-md1 layui-col-xs1 layui-hide-md"><a href=""><p class="ran" style="margin-top: 10px;">EN</p></a></div>
+		</div>
+		
+		
+		<div class="layui-carousel" id="test10">
+			<div carousel-item="">
+				<div><img style="width: 100%;" src="images/kv1.jpg"></div>
+				<div><img style="width: 100%;" src="images/kv2.jpg"></div>
+				<div><img style="width: 100%;" src="images/kv3.jpg"></div>
+			</div>
+			<!-- <div class="layui-row" style="background: rgba(0,0,0,.2);height: 100px;">
+				<div class="layui-container">
+					<div id="tp" style="line-height: 100px; border-left: 1px solid #EEEEEE;" class="layui-col-md4 on">白鹭科技</div>
+					<div id="tp" style="line-height: 100px; border-left: 1px solid #EEEEEE;" class="layui-col-md4 on">白鹭科技</div>
+					<div id="tp" style="line-height: 100px; border-left: 1px solid #EEEEEE; border-right: 1px solid #EEEEEE;" class="layui-col-md4 on">白鹭科技</div>
+				</div>
+			</div> -->
+		</div>
+		
+		
+		
+		<div class="layui-container" style="margin-top: 20px;">
+			<div id="top" style="margin-bottom: 20px;"  class="layui-hide-xs" >
+				<img style="width: 13px;height: 20px;float: left;margin-top: 8px;" src="images/pen.png">
+				<h1 style="font-size: 28px;color: #292A2F;margin-left: 30px;">白鹭引擎</h1>
+			</div>
+			<div id="lunbo" style="background: #F7FAFC;display: flex;">    	
+					<div id="lunbo1" style="margin: 0 auto;margin-top: 40px;" class="layui-col-md8 layui-col-xs10 ">
+					    <div class="layui-row">
+							<div id="lunbo2" style="color: #292A2F;text-align: center;margin-top: 40px;" class="layui-col-md12 layui-col-xs12 layui-col-sm12">
+								<h1 style="font-size: 32px;" class="layui-hide-xs">效率至上的一站式完整开发工作流</h1>
+								<p style="font-size: 16px;" class="layui-hide-md">效率至上的一站式完整开发工作流</p>
+							</div>
+							<div id="lunbo3" style="color: #87888C;text-align: center;margin-top: 20px;" class="layui-col-md12 layui-col-xs12 layui-col-sm12">
+								<h1 style="font-size: 18px;" class="layui-hide-xs">2D/3D双核心渲染，开发工具链闭环整合，全流程开发，由此开始</h1>
+								<p style="font-size: 10px;" class="layui-hide-md">2D/3D双核心渲染，开发工具链闭环整合，全流程开发，由此开始</p>
+							</div>
+							<div id="lunbo6" style="margin-top: 20px;" class="layui-col-md12 layui-col-xs12 layui-col-sm12">
+								<img src="images/engine3 (1).png"  class="layui-hide-md" style="width: 332px;height: 240px;"/>
+								<p style="text-align: center;font-size: 14px;color:#87888C;"  class="layui-hide-md">一站对接各大网站</p>
+							</div>
+							<div id="lunbo4" style="margin: 0 auto;text-align: center;margin-top: 20px;" class="layui-col-md12 layui-col-xs12 layui-col-sm12">
+								<img class="layui-hide-xs" style="width:20%; height: 13px; padding-right: 10px;" src="images/engineLeft.png" />
+								<img style="height:22px;width: 22px;" src="images/h5.png" />
+								<img style="height:22px;width: 22px;" src="images/ap.png" />
+								<img style="height:22px;width: 22px;" src="images/fb.png" />
+								<img style="height:22px;width: 22px;" src="images/an.png" />
+								<img style="height:22px;width: 22px;" src="images/qz.png" />
+								<img style="height:22px;width: 22px;;" src="images/wx.png" />					      
+								<img class="layui-hide-xs" style="width:20%; height: 12px; padding-left: 20px;" src="images/engineRight.png" />
+							</div>
+							<div id="lunbo5" style="text-align: center;margin-bottom: 25px;" class="layui-col-md12 layui-col-xs12">
+								<img class="layui-hide-xs" style="width:80%; height: 40%;" src="images/engine1.png" />
+							</div>
+					    </div>
+					</div>
+				</div>
+			</div>   
+		</div>
+
+ 
+ 
+		<div style=" width: 70%; margin: 0 auto;" class="layui-row layui-col-space30">
+			<div class="layui-col-md12">
+				<img style="margin-right: 8px; margin-bottom: 5px; width: 15px; height: 20px;" src="layui/images/img/pen%20(1).png" >
+				<h2 style="display: inline;">案例推荐</h2>
+			</div>	
+			<div id="anli" class="layui-col-md4 layui-col-xs12 ">
+				<img class="layui-hide-xs" style="width: 100%; border-radius: 5px;" src="layui/images/img/5bae0283c104d.jpg" >
+				<img class="layui-hide-md layui-hide-sm" style="width: 100%; border-radius: 5px;" src="layui/images/img/5bae0283c104d.jpg" >
+				<div class="layui-col-md12 layui-hide-xs cont">
+					<h3>传奇来了</h3>
+					<h3 style="color: #A4A2A2;" >微信小程序版还原经典传奇，采用无缝跨屏模式，画面清晰精致，打击感实足。游戏效果写实逼真，角色形象霸气十足！</h3>
+				</div>
+			</div>
+			<div id="anli" class="layui-col-md4 layui-col-xs12">
+				<img class="layui-hide-xs" style="width: 100%; border-radius: 5px;" src="layui/images/img/5bae02aac04a3.png" >
+				<img class="layui-hide-md layui-hide-sm" style="width: 100%; border-radius: 5px;" src="layui/images/img/5bae02aac04a3.png" >
+				<div class="layui-col-md12 layui-hide-xs cont">
+					<h3>女皇陛下</h3>
+					<h3 style="color: #A4A2A2;" >后宫美男恋爱养成游戏，以历史美男收集，角色换装为主展开宫廷恋爱之旅，兼具古典唯美的画风和丰富的游戏剧情！</h3>
+				</div>
+			</div>
+			<div id="anli" class="layui-col-md4 layui-col-xs12">
+				<img class="layui-hide-xs" style="width: 100%; border-radius: 5px;" src="layui/images/img/5bae02b9c85ac.jpg" >
+				<img class="layui-hide-md layui-hide-sm" style="width: 100%;border-radius: 5px;" src="layui/images/img/5bae02b9c85ac.jpg" >
+				<div class="layui-col-md12 layui-hide-xs cont">
+					<h3>海盗来了</h3>
+					<h3 style="color: #A4A2A2;" >以海盗为题材的社交类小游戏，玩家可以通过转盘获得金币和道具建造属于自己的海岛，探索新的世界，结交新的朋友！</h3>
+				</div>
+			</div>
+		  
+		  <!-- 案例推荐下半部分 -->
+		  
+			<div id="anli" class="layui-col-md4 layui-col-xs12 ">
+				<img class="layui-hide-xs" style="width: 100%; border-radius: 5px;" src="layui/images/img/5c985bcdb3dff.png" >
+				<img class="layui-hide-md layui-hide-sm" style="width: 100%; border-radius: 5px;" src="layui/images/img/5c985bcdb3dff.png" >
+				<div class="layui-col-md12 layui-hide-xs cont">
+					<h3>时光幻境</h3>
+					<h3 style="color: #A4A2A2;" >微信小程序版还原经典传奇，采用无缝跨屏模式，画面清晰精致，打击感实足。游戏效果写实逼真，角色形象霸气十足！</h3>
+				</div>
+			</div>
+			<div id="anli" class="layui-col-md4 layui-col-xs12">
+				<img class="layui-hide-xs" style="width: 100%; border-radius: 5px;" src="layui/images/img/5c985c6d3d4eb.png" >
+				<img class="layui-hide-md layui-hide-sm" style="width: 100%; border-radius: 5px;" src="layui/images/img/5c985c6d3d4eb.png" >
+				<div class="layui-col-md12 layui-hide-xs cont">
+					<h3>梦道</h3>
+					<h3 style="color: #A4A2A2;" >后宫美男恋爱养成游戏，以历史美男收集，角色换装为主展开宫廷恋爱之旅，兼具古典唯美的画风和丰富的游戏剧情！</h3>
+				</div>
+			</div>
+			<div id="anli" class="layui-col-md4 layui-col-xs12">
+				<img class="layui-hide-xs" style="width: 100%; border-radius: 5px;" src="layui/images/img/5c985c921048c.png" >
+				<img class="layui-hide-md layui-hide-sm" style="width: 100%; border-radius: 5px;" src="layui/images/img/5c985c921048c.png" >
+				<div class="layui-col-md12 layui-hide-xs cont">
+					<h3>幸福厨房</h3>
+					<h3 style="color: #A4A2A2;" >以海盗为题材的社交类小游戏，玩家可以通过转盘获得金币和道具建造属于自己的海岛，探索新的世界，结交新的朋友！</h3>
+				</div>
+			</div>
+		</div>
+
+		<!-- 下半部分 -->
+		<div style="position: relative; top: 30px; width: 70%; margin: 0 auto;" class="layui-row layui-col-space30">
+			<div class="layui-col-md12">
+				<img style="margin-right: 8px; margin-bottom: 5px; width: 15px; height: 20px;" src="layui/images/img/pen%20(1).png" >
+				<h2 style="display: inline;">新闻动态</h2>
+			</div>
+		<!-- 新闻动态pc端 -->
+			<div id="anli" class="layui-col-md4 layui-hide-xs ">
+				<img src="layui/images/img/5c74a090a4ffe.jpg" style="width: 100%; border-radius: 5px;" >
+				<div class="layui-col-md12 layui-hide-xs cont">
+					<h3 >白鹭引擎团队即将发布 Egret Pro，并公布后续路线图</h3>
+				</div>
+			</div>
+		  <!-- 新闻动态手机端 -->
+			<div id="anli" class="layui-col-xs12 layui-hide-md layui-hide-sm ">
+				<div class="layui-col-xs5 cont">
+				<img src="layui/images/img/5c74a090a4ffe.jpg" style="width: 100%; border-radius: 5px;" >
+				</div>
+				<div class="layui-col-xs7 cont">
+					<h3 >白鹭引擎团队即将发布 Egret Pro，并公布后续路线图</h3>
+				</div>
+			</div>
+		  
+		  
+		  
+		  
+		  
+			<div id="anli" class="layui-col-md4 layui-hide-xs ">
+				<img src="layui/images/img/5be01d20652c8.png" style="width: 100%; border-radius: 5px;" >
+				<div class="layui-col-md12 layui-hide-xs cont">
+					<h3 >白鹭科技陈书艺：小游戏海外推广应注重本地化、用户与流量</h3>
+				</div>
+			</div>
+		  <!-- 新闻动态手机端 -->
+			<div id="anli" class="layui-col-xs12 layui-hide-md layui-hide-sm ">
+				<div class="layui-col-xs5 cont">
+					<img src="layui/images/img/5be01d20652c8.png" style="width: 100%; border-radius: 5px;" >
+				</div>
+				<div class="layui-col-xs7 cont">
+					<h3 >白鹭科技陈书艺：小游戏海外推广应注重本地化、用户与流量</h3>
+				</div>
+			</div>
+		  
+		  
+		  
+			<div id="anli" class="layui-col-md4 layui-hide-xs ">
+				<img src="layui/images/img/5c2efbeb46f9a.jpg" style="width: 100%; border-radius: 5px;" >
+				<div class="layui-col-md12 layui-hide-xs cont">
+					<h3 >Egret Wing全新形态开启内测，发布全新工具</h3>
+				</div>
+			</div>
+		  <!-- 新闻动态手机端 -->
+			<div id="anli" class="layui-col-xs12 layui-hide-md layui-hide-sm ">
+				<div class="layui-col-xs5 cont">
+					<img src="layui/images/img/5c2efbeb46f9a.jpg" style="width: 100%; border-radius: 5px;" >
+				</div>
+				<div class="layui-col-xs7 cont">
+					<h3 >Egret Wing全新形态开启内测，发布全新工具</h3>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
